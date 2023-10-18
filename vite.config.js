@@ -11,4 +11,7 @@ export default defineConfig({
       resolvers: [VantResolver()],
     }),
   ],
+  resolve: {
+    extensions: ['.js', 'jsx', '.ts', '.ejs', '.mjs', '.cjs'],
+  },
 });
