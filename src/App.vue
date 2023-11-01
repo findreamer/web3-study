@@ -1,15 +1,16 @@
 <template>
   <div class="box">
-    <van-button type="primary">2123</van-button>
+    <Api/>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, reactive } from 'vue';
+import { provide } from 'vue';
 import Web3 from 'web3';
-var web3 = new Web3(Web3.givenProvider || 'ws://localhost:8545');
+import Api from './components/Api.vue';
+var web3 = new Web3(Web3.givenProvider || 'wss://goerli.infura.io/ws/v3/82ab85a0b9fc4fbbaf304ab91e80dc00');
 
-console.log(web3);
+provide('global', web3)
 </script>
 
 <style lang="less" scoped>
