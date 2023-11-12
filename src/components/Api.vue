@@ -20,6 +20,8 @@
 
 <script setup lang="ts">
 import { inject, ref } from 'vue';
+import Tx from 'ethereumjs-ts';
+
 const web3 = inject('global', null);
 const account = ref({
   address: '0xEB7ef28A133B5a8A614Dfb9B7B9A50215f8A51fe',
@@ -65,6 +67,8 @@ const send = async () => {
 
   }
   console.log(nonce, gasPrice,value)
+
+  // 2、 seria
 }
 </script>
 
