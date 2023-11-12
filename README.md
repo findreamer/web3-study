@@ -1,7 +1,15 @@
-# Vue 3 + Vite
+# 学习记录
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+- 18-24：学习使用`web3.js`创建账户并进行转账操作。
+- 25：了解账户系统，助记词、keystore、私钥、账户之间的关系。
+  - 保管钱包的几种方式：
+    - 私钥
+    - keystore + 密码
+    - 助记词
+  - 总结：
+    - 通过私钥 + 密码可以生成keystore，即加密私钥。
+    - 通过keystore + 密码可以获取私钥，即解密私钥。
+    - 通过助记词根据不同的路径获取不同的私钥，即使使用HD钱包将助记词转化为种子来生成主私钥，然后派生海量的子私钥和地址。
+- 26：创建助记词。
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+  
